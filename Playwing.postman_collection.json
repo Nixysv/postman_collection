@@ -1,0 +1,1482 @@
+{
+	"info": {
+		"_postman_id": "149eed8d-0dda-4b03-b1e2-c2a63526d4cf",
+		"name": "Playwing",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "18053699"
+	},
+	"item": [
+		{
+			"name": "THE KIOSK",
+			"item": [
+				{
+					"name": "Smartfren",
+					"item": [
+						{
+							"name": "SUB passthrough STAGE notif",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Signature",
+										"value": "a82acb252e9d13c9da0eb89fc5e1b1a77e54d44f9c01ac2dbbef7a4c03683573",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\"notifId\":\"5422812933338---20765575\",\"actionCode\":\"SN\",\"actionDesc\":\"Subscriber New Activation-1-301\",\"msisdn\":\"[MCV]xfR4EJqaw1obEDjE2W+LTg==\",\"opId\":30,\"serviceId\":\"kiosk\",\"chargedAmount\":\"2000.0\"}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://billing-external-api-stage.thekiosk.store/api/public/notif/3021",
+									"protocol": "http",
+									"host": [
+										"billing-external-api-stage",
+										"thekiosk",
+										"store"
+									],
+									"path": [
+										"api",
+										"public",
+										"notif",
+										"3021"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Renew passthrough PROD notif success",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Signature",
+										"value": "aedafd01d384ef99645823f7f2e51d11f8c4c0fca0e32bd0232ecc45e186aa1d",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"notifId\":\"1656200179285-2db7c08b\",\n  \"actionCode\":\"YR\",\n  \"actionDesc\":\"Renewal Resume-1-301\",\n  \"msisdn\":\"[MCV]xfR4EJqaw1obEDjE2W+LTg==\",\n  \"opId\":30,\n  \"serviceId\":\"kiosk\",\n  \"chargedAmount\":\"2000.0\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://billing-external-api.thekiosk.store/api/public/notif/3021",
+									"protocol": "http",
+									"host": [
+										"billing-external-api",
+										"thekiosk",
+										"store"
+									],
+									"path": [
+										"api",
+										"public",
+										"notif",
+										"3021"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Renew passthrough PROD notif UNsuccess",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Signature",
+										"value": "babd6266f8ab250870b38bfb89851ac923710aa723a27a7a6e8aed7515f4a1b7",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"notifId\":\"1656200179285-2db7c08b\",\n  \"actionCode\":\"YF\",\n  \"actionDesc\":\"Renewal Resume-1-301\",\n  \"msisdn\":\"[MCV]xfR4EJqaw1obEDjE2W+LTg==\",\n  \"opId\":30,\n  \"serviceId\":\"kiosk\",\n  \"chargedAmount\":\"2000.0\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://billing-external-api.thekiosk.store/api/public/notif/3021",
+									"protocol": "http",
+									"host": [
+										"billing-external-api",
+										"thekiosk",
+										"store"
+									],
+									"path": [
+										"api",
+										"public",
+										"notif",
+										"3021"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Renew passthrough STAGE notif",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Signature",
+										"value": "03f3ed31c3b2cce36db48c865f7d5d40c8caef39c20a0a749e76caefb12591a9",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"notifId\":\"1656200179285-2db7c08b\",\n  \"actionCode\":\"YR\",\n  \"actionDesc\":\"Renewal Resume-1-301\",\n  \"msisdn\":\"[MCV]xfR4EJqaw1obEDjE2W+LTg==\",\n  \"opId\":30,\n  \"serviceId\":\"kiosk\",\n  \"chargedAmount\":\"2000.0\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://billing-external-api-stage.thekiosk.store/api/public/notif/3021",
+									"protocol": "http",
+									"host": [
+										"billing-external-api-stage",
+										"thekiosk",
+										"store"
+									],
+									"path": [
+										"api",
+										"public",
+										"notif",
+										"3021"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Renew PR callback",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\"id\":64190540,\"client\":\"kiosk-store\",\"client_id\":null,\"client_user\":\"[MCV]xfR4EJqaw1obEDjE2W+LTg==\",\"client_fields\":{\"paid_amount\":\"2000\",\"paid_at\":\"2022-08-31 09:51:24\"},\"type\":\"renew\",\"subtype\":\"final\",\"status\":\"successful\",\"error\":null,\"url\":null,\"provider_id\":\"8455138302335\",\"provider_user\":null,\"provider_fields\":{\"\\u0000App\\\\DTO\\\\Request\\\\CarrierRequest\\\\Dot\\\\DotNotificationRequestDTO\\u0000notifId\":\"1656200179285-2db7c08b\",\"\\u0000App\\\\DTO\\\\Request\\\\CarrierRequest\\\\Dot\\\\DotNotificationRequestDTO\\u0000msisdn\":\"[MCV]xfR4EJqaw1obEDjE2W+LTg==\",\"\\u0000App\\\\DTO\\\\Request\\\\CarrierRequest\\\\Dot\\\\DotNotificationRequestDTO\\u0000opId\":30,\"\\u0000App\\\\DTO\\\\Request\\\\CarrierRequest\\\\Dot\\\\DotNotificationRequestDTO\\u0000serviceId\":\"kiosk\",\"\\u0000App\\\\DTO\\\\Request\\\\CarrierRequest\\\\Dot\\\\DotNotificationRequestDTO\\u0000chargedAmount\":2000,\"\\u0000App\\\\DTO\\\\Request\\\\CarrierRequest\\\\Dot\\\\DotNotificationRequestDTO\\u0000actionCode\":\"YR\",\"\\u0000App\\\\DTO\\\\Request\\\\CarrierRequest\\\\Dot\\\\DotNotificationRequestDTO\\u0000actionDesc\":\"Renewal Resume-1-301\",\"\\u0000App\\\\DTO\\\\Request\\\\CarrierRequest\\\\Dot\\\\DotNotificationRequestDTO\\u0000carrierId\":3021,\"\\u0000App\\\\DTO\\\\Request\\\\CarrierRequest\\\\Dot\\\\DotNotificationRequestDTO\\u0000processId\":null,\"\\u0000App\\\\DTO\\\\Request\\\\CarrierRequest\\\\Dot\\\\DotNotificationRequestDTO\\u0000providerId\":\"1656200179285-2db7c08b\"},\"charge_full\":null,\"charge_error\":null,\"charge_value\":null,\"charge_paid\":\"2000\",\"charge_currency\":null,\"charge_tier\":\"2\",\"carrier\":3021}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://pr-3144-kiosk.jenkins.dev-integrations.com/v2/callback/listen",
+									"protocol": "http",
+									"host": [
+										"pr-3144-kiosk",
+										"jenkins",
+										"dev-integrations",
+										"com"
+									],
+									"path": [
+										"v2",
+										"callback",
+										"listen"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "UNSUB passthrough STAGE notif",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Signature",
+										"value": "cb1d5e9447119f78cb681c0c6315ac35128da694d1c368036847cea9abf0c061",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\"notifId\":\"1660923181307-f5d7452d\",\"actionCode\":\"ACI\",\"actionDesc\":\"Subscriber Churn Immediately In Active-0-SMS\",\"msisdn\":\"[MCV]xfR4EJqaw1obEDjE2W+LTg==\",\"opId\":30,\"serviceId\":\"kiosk\",\"chargedAmount\":\"0.0\"}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://billing-external-api-stage.thekiosk.store/api/public/notif/3021",
+									"protocol": "http",
+									"host": [
+										"billing-external-api-stage",
+										"thekiosk",
+										"store"
+									],
+									"path": [
+										"api",
+										"public",
+										"notif",
+										"3021"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "MO sub PR callback",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"id\":\"51983214\",\"parent\":null,\"client\":\"kiosk-store\",\"client_id\":null,\"client_user\":null,\"client_fields\":[],\"type\":\"subscribe\",\"subtype\":\"provider\",\"status\":\"successful\",\"error\":null,\"url\":null,\"carrier\":\"3007\",\"provider\":\"111\",\"provider_id\":null,\"provider_user\":\"972567495017\",\"provider_fields\":{\"source\":\"SMS\"},\"charge_full\":false,\"charge_error\":null,\"charge_value\":\"1.0000\",\"charge_paid\":\"0\",\"charge_currency\":null,\"charge_product\":null,\"charge_tier\":2,\"charge_strategy\":66,\"charge_forcedate\":\"2022-03-15 19:10:03\",\"batches\":null,\"charges\":null,\"charges_successful\":null,\"attempts\":null,\"chargedate\":null,\"attemptdate\":\"2017-01-01 00:00:00\",\"insertdate\":\"2022-03-14 13:10:03.560900\",\"moddate\":null,\"listeners\":[],\"tokens\":[]}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://pr-2184-kiosk.jenkins.dev-integrations.com/v2/callback/listen",
+							"protocol": "http",
+							"host": [
+								"pr-2184-kiosk",
+								"jenkins",
+								"dev-integrations",
+								"com"
+							],
+							"path": [
+								"v2",
+								"callback",
+								"listen"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "MO sub STAGE callback",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"id\":63271248,\"client\":\"kiosk-store\",\"client_id\":null,\"client_user\":\"[MCV]xfR4EJqaw1obEDjE2W+LTg==\",\"client_fields\":[],\"type\":\"subscribe\",\"subtype\":\"provider\",\"status\":\"successful\",\"error\":null,\"url\":null,\"provider_id\":\"1659954151046-d89a608e\",\"provider_user\":\"[MCV]xfR4EJqaw1obEDjE2W+LTg==\",\"provider_fields\":{\"\\u0000App\\\\DTO\\\\Request\\\\CarrierRequest\\\\Dot\\\\DotNotificationRequestDTO\\u0000notifId\":\"1659954151046-d89a608e\",\"\\u0000App\\\\DTO\\\\Request\\\\CarrierRequest\\\\Dot\\\\DotNotificationRequestDTO\\u0000msisdn\":\"[MCV]xfR4EJqaw1obEDjE2W+LTg==\",\"\\u0000App\\\\DTO\\\\Request\\\\CarrierRequest\\\\Dot\\\\DotNotificationRequestDTO\\u0000opId\":30,\"\\u0000App\\\\DTO\\\\Request\\\\CarrierRequest\\\\Dot\\\\DotNotificationRequestDTO\\u0000serviceId\":\"kiosk\",\"\\u0000App\\\\DTO\\\\Request\\\\CarrierRequest\\\\Dot\\\\DotNotificationRequestDTO\\u0000chargedAmount\":2000,\"\\u0000App\\\\DTO\\\\Request\\\\CarrierRequest\\\\Dot\\\\DotNotificationRequestDTO\\u0000actionCode\":\"SN\",\"\\u0000App\\\\DTO\\\\Request\\\\CarrierRequest\\\\Dot\\\\DotNotificationRequestDTO\\u0000actionDesc\":\"Subscriber New Activation-1-SMS\",\"\\u0000App\\\\DTO\\\\Request\\\\CarrierRequest\\\\Dot\\\\DotNotificationRequestDTO\\u0000carrierId\":3021,\"\\u0000App\\\\DTO\\\\Request\\\\CarrierRequest\\\\Dot\\\\DotNotificationRequestDTO\\u0000processId\":null,\"\\u0000App\\\\DTO\\\\Request\\\\CarrierRequest\\\\Dot\\\\DotNotificationRequestDTO\\u0000providerId\":\"1659954151046-d89a608e\"},\"charge_full\":null,\"charge_error\":null,\"charge_value\":null,\"charge_paid\":\"2000\",\"charge_currency\":null,\"charge_tier\":\"2\",\"carrier\":3021}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://stage.thekiosk.store/v2/callback/listen",
+							"protocol": "https",
+							"host": [
+								"stage",
+								"thekiosk",
+								"store"
+							],
+							"path": [
+								"v2",
+								"callback",
+								"listen"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "MO unsub PR callback",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"id\":\"51986119\",\"parent\":null,\"client\":\"kiosk-store\",\"client_id\":null,\"client_user\":null,\"client_fields\":[],\"type\":\"unsubscribe\",\"subtype\":\"provider\",\"status\":\"successful\",\"error\":null,\"url\":null,\"carrier\":\"3007\",\"provider\":\"111\",\"provider_id\":234264399167,\"provider_user\":\"972567495017\",\"provider_fields\":{\"opId\":73,\"serviceId\":\"kiosk\",\"commandType\":\"UNSUB\",\"msisdn\":\"972567495017\",\"source\":\"SMS\"},\"charge_full\":null,\"charge_error\":null,\"charge_value\":null,\"charge_paid\":null,\"charge_currency\":null,\"charge_product\":\"kiosk\",\"charge_tier\":null,\"charge_strategy\":null,\"charge_forcedate\":null,\"batches\":null,\"charges\":null,\"charges_successful\":null,\"attempts\":null,\"chargedate\":null,\"attemptdate\":null,\"insertdate\":\"2022-03-14 14:10:06.834500\",\"moddate\":null,\"listeners\":[],\"tokens\":[]}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://pr-2184-kiosk.jenkins.dev-integrations.com/v2/callback/listen",
+							"protocol": "http",
+							"host": [
+								"pr-2184-kiosk",
+								"jenkins",
+								"dev-integrations",
+								"com"
+							],
+							"path": [
+								"v2",
+								"callback",
+								"listen"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "VOD",
+			"item": [
+				{
+					"name": "T-Mobile AT",
+					"item": [
+						{
+							"name": "Renew via export",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/x-www-form-urlencoded"
+									}
+								],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "digest",
+											"value": "30440cfbcd20f41b9b6266c7af195404b348a43711a60a689cf95c85529076a7",
+											"type": "text"
+										},
+										{
+											"key": "data",
+											"value": "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?><result version=\"2\" sync=\"false\" original_version=\"2\"><action>renew-subscription</action><action_result><code>522</code><detail>ERROR_PSP_CUSTOMER_NO_BALANCE</detail><status>1</status></action_result><additional_results><additional_result><key>notification</key><value>true</value></additional_result><additional_result><key>next_renewal</key><value>2022-05-26+11:53:03</value></additional_result><additional_result><key>last_successful_capture</key><value>2022-05-10+10:52:09</value></additional_result><additional_result><key>last_capture_try</key><value>2022-05-25+11:53:03</value></additional_result><additional_result><key>last_capture_success</key><value>0</value></additional_result><additional_result><key>subscription_startdate</key><value>2022-05-10+10:52:09</value></additional_result></additional_results><customer><country>AT</country><language>de</language><msisdn>436764054138</msisdn><operator>AT_TMOBILE</operator></customer><payment_parameters><channel>web</channel><method>OPERATOR</method><order>112905</order></payment_parameters><subscription><definition><amount>3.90</amount><currency>EUR</currency><event_count>1</event_count><length>1</length><type>WEEK</type></definition><id>515753496</id><status>4</status></subscription><transactions><transaction><amount>3.90</amount><billed_amount>0.00</billed_amount><currency>EUR</currency><id>RS-p-23fab708-b9fb-4fa8-abc1-256f7a2c042e</id><status>3</status><subscription_id>515753496</subscription_id></transaction></transactions></result>",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "http://billing.100sport.tv/api/public/notif/2333",
+									"protocol": "http",
+									"host": [
+										"billing",
+										"100sport",
+										"tv"
+									],
+									"path": [
+										"api",
+										"public",
+										"notif",
+										"2333"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Renew via export1",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/x-www-form-urlencoded"
+									}
+								],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "digest",
+											"value": "b5d399a186c5048487be0b6997cacfeba70efdfaa8bb5d14183dcd7537a4f071",
+											"type": "text"
+										},
+										{
+											"key": "data",
+											"value": "<?xml+version=\"1.0\"+encoding=\"UTF-8\"+standalone=\"yes\"?><result+version=\"2\"+sync=\"false\"+original_version=\"2\"><action>renew-subscription</action><action_result><status>0</status></action_result><additional_results><additional_result><key>notification</key><value>true</value></additional_result><additional_result><key>next_renewal</key><value>2022-05-26+12:03:47</value></additional_result><additional_result><key>last_successful_capture</key><value>2022-05-19+12:03:48</value></additional_result><additional_result><key>last_capture_try</key><value>2022-05-19+12:03:48</value></additional_result><additional_result><key>last_capture_success</key><value>1</value></additional_result><additional_result><key>subscription_startdate</key><value>2020-04-30+12:03:47</value></additional_result></additional_results><customer><country>AT</country><language>de</language><msisdn>436766432670</msisdn><operator>AT_TMOBILE</operator></customer><payment_parameters><channel>wap</channel><method>DCB</method><order>112905</order></payment_parameters><subscription><definition><amount>3.90</amount><currency>EUR</currency><event_count>1</event_count><length>1</length><type>WEEK</type></definition><id>515753351</id><status>4</status></subscription><transactions><transaction><amount>3.90</amount><billed_amount>3.90</billed_amount><currency>EUR</currency><id>RS-p-b71be0c4-ab6e-4349-8bdb-239003a1c3d6</id><status>5</status><subscription_id>515753351</subscription_id></transaction></transactions></result>",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "http://billing.100sport.tv/api/public/notif/2333",
+									"protocol": "http",
+									"host": [
+										"billing",
+										"100sport",
+										"tv"
+									],
+									"path": [
+										"api",
+										"public",
+										"notif",
+										"2333"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "STC",
+					"item": [
+						{
+							"name": "OTP-PIN SUB Callback from PROD to PR",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\"id\":625045373,\"client\":\"vod-store\",\"client_id\":null,\"client_user\":\"966559926448\",\"client_fields\":{\"paid_amount\":\"1.5\",\"paid_at\":\"2023-01-13 13:01:25\"},\"type\":\"subscribe\",\"subtype\":\"provider\",\"status\":\"successful\",\"error\":null,\"url\":null,\"provider_id\":null,\"provider_user\":\"966559926448\",\"provider_fields\":{\"msisdn\":\"966559926448\",\"carrier\":2740,\"userId\":\"5e820492489619864fa79f4f\",\"providerAction\":\"sub\"},\"charge_full\":null,\"charge_error\":null,\"charge_value\":null,\"charge_paid\":\"1.5000\",\"charge_currency\":null,\"charge_tier\":\"2\",\"carrier\":2740}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://pr-4019-vod.jenkins.dev-integrations.com/billing-sdk/api/callback",
+									"protocol": "http",
+									"host": [
+										"pr-4019-vod",
+										"jenkins",
+										"dev-integrations",
+										"com"
+									],
+									"path": [
+										"billing-sdk",
+										"api",
+										"callback"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "SUB MO",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\"action\":\"sub\",\"msisdn\":\"966559926448\",\"notification_id\":\"630ca6314896192c77ff7a03\",\"notification_time\":\"2022-08-29 11:42:41\",\"service_connection_id\":\"2537\",\"user_id\":\"5e820492489619864fa79f4f\"}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://vod-sb-stage-provider-lb-1352731790.eu-west-1.elb.amazonaws.com/api/public/notif/2740",
+									"protocol": "http",
+									"host": [
+										"vod-sb-stage-provider-lb-1352731790",
+										"eu-west-1",
+										"elb",
+										"amazonaws",
+										"com"
+									],
+									"path": [
+										"api",
+										"public",
+										"notif",
+										"2740"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "UNSUB MO",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\"action\":\"deactivated\",\"msisdn\":\"966559926448\",\"notification_id\":\"630df6604896194c21b16eef\",\"notification_time\":\"2022-08-30 11:37:04\",\"service_connection_id\":\"2537\",\"user_id\":\"5e820492489619864fa79f4f\"}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://vod-sb-stage-provider-lb-1352731790.eu-west-1.elb.amazonaws.com/api/public/notif/2740",
+									"protocol": "http",
+									"host": [
+										"vod-sb-stage-provider-lb-1352731790",
+										"eu-west-1",
+										"elb",
+										"amazonaws",
+										"com"
+									],
+									"path": [
+										"api",
+										"public",
+										"notif",
+										"2740"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "А1 АТ",
+					"item": [
+						{
+							"name": "Renew Stage",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "data",
+											"value": "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?><result version=\"2\" sync=\"false\" original_version=\"2\"><action>renew-subscription</action><action_result><status>0</status></action_result><additional_results><additional_result><key>notification</key><value>true</value></additional_result><additional_result><key>next_renewal</key><value>2022-08-31+13:44:06</value></additional_result><additional_result><key>last_successful_capture</key><value>2022-08-24+13:44:06</value></additional_result><additional_result><key>last_capture_try</key><value>2022-08-24+13:44:06</value></additional_result><additional_result><key>last_capture_success</key><value>1</value></additional_result><additional_result><key>subscription_startdate</key><value>2022-08-17+13:44:05</value></additional_result></additional_results><customer><country>AT</country><ip>213.142.97.216</ip><language>de</language><msisdn>436641066734</msisdn><operator>AT_A1</operator></customer><payment_parameters><channel>wap</channel><method>DCB</method><order>112905</order></payment_parameters><subscription><definition><amount>3.90</amount><currency>EUR</currency><event_count>1</event_count><length>1</length><type>WEEK</type></definition><id>RS-p-488f8b1b-2914-49c3-926c-2813e8271b79</id><status>4</status></subscription><transactions><transaction><amount>3.90</amount><billed_amount>3.90</billed_amount><currency>EUR</currency><id>RD-p-5568c6e8-1b37-491e-8183-0536e8e0ae67</id><status>5</status><subscription_id>RS-p-488f8b1b-2914-49c3-926c-2813e8271b79</subscription_id></transaction></transactions></result>",
+											"type": "text"
+										},
+										{
+											"key": "digest",
+											"value": "4d6b858eac54812f075b91ed626cf07c0909d5d7ab301b2ecbdf08f8cc32461b",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "http://vod-sb-stage-provider-lb-1352731790.eu-west-1.elb.amazonaws.com/api/public/notif/2335",
+									"protocol": "http",
+									"host": [
+										"vod-sb-stage-provider-lb-1352731790",
+										"eu-west-1",
+										"elb",
+										"amazonaws",
+										"com"
+									],
+									"path": [
+										"api",
+										"public",
+										"notif",
+										"2335"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Renew PROD",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "data",
+											"value": "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?><result version=\"2\" sync=\"false\" original_version=\"2\"><action>renew-subscription</action><action_result><status>0</status></action_result><additional_results><additional_result><key>notification</key><value>true</value></additional_result><additional_result><key>next_renewal</key><value>2022-08-31+13:44:06</value></additional_result><additional_result><key>last_successful_capture</key><value>2022-08-24+13:44:06</value></additional_result><additional_result><key>last_capture_try</key><value>2022-08-24+13:44:06</value></additional_result><additional_result><key>last_capture_success</key><value>1</value></additional_result><additional_result><key>subscription_startdate</key><value>2022-08-17+13:44:05</value></additional_result></additional_results><customer><country>AT</country><ip>213.142.97.216</ip><language>de</language><msisdn>436641240057</msisdn><operator>AT_A1</operator></customer><payment_parameters><channel>wap</channel><method>DCB</method><order>114495</order></payment_parameters><subscription><definition><amount>3.90</amount><currency>EUR</currency><event_count>1</event_count><length>1</length><type>WEEK</type></definition><id>RS-p-1bfa5250-33c4-4a46-867c-3f2e7d63a233</id><status>4</status></subscription><transactions><transaction><amount>3.90</amount><billed_amount>3.90</billed_amount><currency>EUR</currency><id>RD-p-8df126e8-bdda-498e-bf44-89d41eff44a0</id><status>5</status><subscription_id>RS-p-1bfa5250-33c4-4a46-867c-3f2e7d63a233</subscription_id></transaction></transactions></result>",
+											"type": "text"
+										},
+										{
+											"key": "digest",
+											"value": "56ba60e211336e778853b33cf33f771a1cd96c88e6ca9b40f3a16b773da8afb8",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "http://external-access.100sport.tv/api/public/notif/2335",
+									"protocol": "http",
+									"host": [
+										"external-access",
+										"100sport",
+										"tv"
+									],
+									"path": [
+										"api",
+										"public",
+										"notif",
+										"2335"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Renew PROD ERROR_PSP_CUSTOMER_NO_BALANCE",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "data",
+											"value": "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?><result version=\"2\" sync=\"false\" original_version=\"2\"><action>renew-subscription</action><action_result><code>522</code><detail>ERROR_PSP_CUSTOMER_NO_BALANCE</detail><status>1</status></action_result><additional_results><additional_result><key>notification</key><value>true</value></additional_result><additional_result><key>next_renewal</key><value>2022-08-24 15:20:04</value></additional_result><additional_result><key>last_successful_capture</key><value>2022-08-17 15:20:05</value></additional_result><additional_result><key>last_capture_try</key><value>2022-08-23 15:20:04</value></additional_result><additional_result><key>last_capture_success</key><value>0</value></additional_result><additional_result><key>subscription_startdate</key><value>2022-08-02 15:20:01</value></additional_result></additional_results><customer><country>AT</country><language>de</language><msisdn>436641240057</msisdn><operator>AT_A1</operator></customer><payment_parameters><channel>web</channel><method>OPERATOR</method><order>114495</order></payment_parameters><subscription><definition><amount>0</amount><currency>EUR</currency><event_count>1</event_count><length>1</length><type>WEEK</type></definition><id>RS-p-36eb8d9c-5c2d-4bc3-8b5d-3a18e19ed468</id><status>4</status></subscription><transactions><transaction><amount>0</amount><billed_amount>0</billed_amount><currency>EUR</currency><id>RD-p-d19bace0-0ef1-42b3-932a-44970432e223</id><status>3</status><subscription_id>RS-p-36eb8d9c-5c2d-4bc3-8b5d-3a18e19ed468</subscription_id></transaction></transactions></result>",
+											"type": "text"
+										},
+										{
+											"key": "digest",
+											"value": "06011a0b353e190e79ad52357007245417b7e59d17f08a9af86755e6216968e3",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "http://external-access.100sport.tv/api/public/notif/2335",
+									"protocol": "http",
+									"host": [
+										"external-access",
+										"100sport",
+										"tv"
+									],
+									"path": [
+										"api",
+										"public",
+										"notif",
+										"2335"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "MTN SA",
+					"item": [
+						{
+							"name": "3G",
+							"item": []
+						}
+					]
+				},
+				{
+					"name": "BE Orange",
+					"item": [
+						{
+							"name": "3G /Wi-Fi sub PR single brunch",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\"uuid\":\"59bb65e1-c646-4bb9-b887-2362fdbb2fa9\",\"purchaseToken\":\"c44c6ffd-456b-4e0e-9726-36cdc14d8a99\",\"subscriptionId\":430050847,\"subscriptionTypeId\":73940001,\"channel\":\"SHOP\",\"event\":\"CREATE\",\"reason\":\"CREATE_ACTIVE\",\"status\":\"ACTIVE\",\"subStatus\":\"NONE\",\"startDate\":\"2022-10-17T14:53:42Z\",\"price\":{\"amount\":3.99,\"currency\":\"EUR\"},\"campaignId\":\"vod-store-[none]-[none]\",\"agency\":\"none\",\"conversionId\":\"1416\"}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://vod-sb-stage-provider-lb-1352731790.eu-west-1.elb.amazonaws.com/api/public/notif/2261",
+									"protocol": "http",
+									"host": [
+										"vod-sb-stage-provider-lb-1352731790",
+										"eu-west-1",
+										"elb",
+										"amazonaws",
+										"com"
+									],
+									"path": [
+										"api",
+										"public",
+										"notif",
+										"2261"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "3G/Wi-Fi unsub PR single brunch",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\"uuid\":\"59bb65e1-c646-4bb9-b887-2362fdbb2fa9\",\"purchaseToken\":\"e2ea4033-aa58-4459-a4a8-a90e8c4f3ebe\",\"subscriptionId\":430020123,\"subscriptionTypeId\":73940001,\"channel\":\"SHOP\",\"event\":\"CANCEL\",\"reason\":\"CANCEL_IMMEDIATELY\",\"status\":\"CANCELED\",\"subStatus\":\"NONE\",\"startDate\":\"2022-10-17T13:44:29Z\",\"endDate\":\"2022-10-17T14:39:44Z\",\"price\":{\"amount\":3.99,\"currency\":\"EUR\"},\"campaignId\":\"vod-store-[none]-[none]\",\"agency\":\"none\",\"conversionId\":\"1408\"}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://vod-sb-stage-provider-lb-1352731790.eu-west-1.elb.amazonaws.com/api/public/notif/2261",
+									"protocol": "http",
+									"host": [
+										"vod-sb-stage-provider-lb-1352731790",
+										"eu-west-1",
+										"elb",
+										"amazonaws",
+										"com"
+									],
+									"path": [
+										"api",
+										"public",
+										"notif",
+										"2261"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Renew SUCCESS",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\"uuid\":\"59bb65e1-c646-4bb9-b887-2362fdbb2fa9\",\"subscriptionId\":433245087,\"subscriptionTypeId\":73940001,\"channel\":\"SCHEDULER\",\"event\":\"RENEWAL\",\"reason\":\"BILLING_SUCCESS\",\"status\":\"ACTIVE\",\"subStatus\":\"NONE\",\"startDate\":\"2020-11-17T10:15:36Z\",\"price\":{\"amount\":3.99,\"currency\":\"EUR\"},\"BGW_MIGRATED_SUBSCRIPTION\":\"179657826\",\"BGW_MIGRATED_CustomerID\":\"360964115\"}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://vod-sb-stage-provider-lb-1352731790.eu-west-1.elb.amazonaws.com/api/public/notif/2261",
+									"protocol": "http",
+									"host": [
+										"vod-sb-stage-provider-lb-1352731790",
+										"eu-west-1",
+										"elb",
+										"amazonaws",
+										"com"
+									],
+									"path": [
+										"api",
+										"public",
+										"notif",
+										"2261"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Renew with NOT enough balance",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\"uuid\":\"59bb65e1-c646-4bb9-b887-2362fdbb2fa9\",\"purchaseToken\":\"6cd3ff60-9f7b-4589-be50-3f211c6cae0e\",\"subscriptionId\":433245087,\"subscriptionTypeId\":73940001,\"channel\":\"SCHEDULER\",\"event\":\"RENEWAL\",\"reason\":\"BILLING_SUCCESS\",\"status\":\"INACTIVE\",\"subStatus\":\"NONE\",\"startDate\":\"2022-07-20T17:40:56Z\",\"price\":{\"amount\":3.99,\"currency\":\"EUR\"},\"campaignId\":\"vod-store-[100%Sport]-[none]\",\"agency\":\"none\",\"conversionId\":\"568617448\"}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://vod-sb-stage-provider-lb-1352731790.eu-west-1.elb.amazonaws.com/api/public/notif/2261",
+									"protocol": "http",
+									"host": [
+										"vod-sb-stage-provider-lb-1352731790",
+										"eu-west-1",
+										"elb",
+										"amazonaws",
+										"com"
+									],
+									"path": [
+										"api",
+										"public",
+										"notif",
+										"2261"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "SUB if we didn't receive notif",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\"uuid\":\"59bb65e1-c646-4bb9-b887-2362fdbb2fa9\",\"purchaseToken\":\"6cd3ff60-9f7b-4589-be50-3f211c6cae0e\",\"subscriptionId\":433245087,\"subscriptionTypeId\":73940001,\"channel\":\"SHOP\",\"event\":\"CREATE\",\"reason\":\"CREATE_ACTIVE\",\"status\":\"ACTIVE\",\"subStatus\":\"NONE\",\"startDate\":\"2022-11-10T16:24:01Z\",\"price\":{\"amount\":3.99,\"currency\":\"EUR\"},\"campaignId\":\"vod-store-[none]-[none]\",\"agency\":\"none\",\"conversionId\":\"2569\",\"action\":\"notification\",\"carrier\":\"2261\"}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://vod-sb-stage-provider-lb-1352731790.eu-west-1.elb.amazonaws.com/api/public/notif/2261",
+									"protocol": "http",
+									"host": [
+										"vod-sb-stage-provider-lb-1352731790",
+										"eu-west-1",
+										"elb",
+										"amazonaws",
+										"com"
+									],
+									"path": [
+										"api",
+										"public",
+										"notif",
+										"2261"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "UNSUB if we didn't receive notif",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\"purchaseToken\":\"59bb65e1-c646-4bb9-b887-2362fdbb2fa9\",\"uuid\":\"59bb65e1-c646-4bb9-b887-2362fdbb2fa9\",\"subscriptionId\":433234071,\"subscriptionTypeId\":73940001,\"channel\":\"SHOP\",\"event\":\"CANCEL\",\"reason\":\"CANCEL_IMMEDIATELY\",\"status\":\"CANCELED\",\"subStatus\":\"NONE\",\"startDate\":\"2022-09-29 01:09:19\",\"price\":{\"amount\":3.99,\"currency\":\"EUR\"},\"eventDateTime\":\"2022-09-29 01:09:19\",\"eventUUID\":\"90a0ccc58905b22ada9c419491dd34c6\"}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://vod-sb-stage-provider-lb-1352731790.eu-west-1.elb.amazonaws.com/api/public/notif/2261",
+									"protocol": "http",
+									"host": [
+										"vod-sb-stage-provider-lb-1352731790",
+										"eu-west-1",
+										"elb",
+										"amazonaws",
+										"com"
+									],
+									"path": [
+										"api",
+										"public",
+										"notif",
+										"2261"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Poland Orange",
+					"item": [
+						{
+							"name": "3G/Wi-Fi sub PR 1 notif",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\"uuid\":\"e4e94c1a-5be2-4d35-80b2-53bb302adf67\",\"MSISDN\":\"PDKSUB-200-bkX5iEtZtNSJsPMXPXVyVzjamvke9lpPe8MmYkEyvQE=\",\"purchaseToken\":\"433a3afd-d4bb-4222-b816-d65633734233\",\"subscriptionId\":436848519,\"subscriptionTypeId\":74960001,\"channel\":\"SHOP\",\"event\":\"CREATE\",\"reason\":\"CREATED_PENDING_INACTIVE\",\"status\":\"INACTIVE\",\"subStatus\":\"PENDING\",\"startDate\":\"2022-12-12T16:07:13Z\",\"endDate\":\"2022-12-12T17:07:13.734Z\",\"price\":{\"currency\":\"PLN\"},\"campaignId\":\"vod-store-[none]-[none]\",\"agency\":\"none\",\"conversionId\":\"3554\",\"eventUUID\":\"8da5a84a-cfc0-468a-aa70-414bbd376f22\"}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://vod-sb-stage-provider-lb-1352731790.eu-west-1.elb.amazonaws.com/api/public/notif/2732",
+									"protocol": "http",
+									"host": [
+										"vod-sb-stage-provider-lb-1352731790",
+										"eu-west-1",
+										"elb",
+										"amazonaws",
+										"com"
+									],
+									"path": [
+										"api",
+										"public",
+										"notif",
+										"2732"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "3G/Wi-Fi sub PR 2 notif (не обязательно)",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\"uuid\":\"e4e94c1a-5be2-4d35-80b2-53bb302adf67\",\"MSISDN\":\"PDKSUB-200-bkX5iEtZtNSJsPMXPXVyVzjamvke9lpPe8MmYkEyvQE=\",\"purchaseToken\":\"75b75402-7045-4178-ba98-3bcea95cd4c1\",\"subscriptionId\":436929513,\"subscriptionTypeId\":74960001,\"channel\":\"EXTERNAL_BACKEND\",\"event\":\"CONFIRMATION\",\"reason\":\"CONFIRMATION_ACTIVE\",\"status\":\"ACTIVE\",\"subStatus\":\"NONE\",\"startDate\":\"2022-12-13T10:37:10Z\",\"price\":{\"amount\":12.29,\"currency\":\"PLN\"},\"campaignId\":\"vod-store-[none]-[none]\",\"agency\":\"none\",\"conversionId\":\"3584\",\"eventUUID\":\"2f77a633-7ae5-4df6-bcfe-fe148edf1957\"}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://vod-sb-stage-provider-lb-1352731790.eu-west-1.elb.amazonaws.com/api/public/notif/2732",
+									"protocol": "http",
+									"host": [
+										"vod-sb-stage-provider-lb-1352731790",
+										"eu-west-1",
+										"elb",
+										"amazonaws",
+										"com"
+									],
+									"path": [
+										"api",
+										"public",
+										"notif",
+										"2732"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "3G/Wi-Fi sub PR 2.1 notif",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\"uuid\":\"e4e94c1a-5be2-4d35-80b2-53bb302adf67\",\"MSISDN\":\"PDKSUB-200-bkX5iEtZtNSJsPMXPXVyVzjamvke9lpPe8MmYkEyvQE=\",\"purchaseToken\":\"75b75402-7045-4178-ba98-3bcea95cd4c1\",\"subscriptionId\":436929513,\"subscriptionTypeId\":74960001,\"channel\":\"EXTERNAL_BACKEND\",\"event\":\"ACTIVATE\",\"reason\":\"ACTIVATE\",\"status\":\"ACTIVE\",\"subStatus\":\"NONE\",\"startDate\":\"2022-12-13T10:37:10Z\",\"price\":{\"currency\":\"PLN\"},\"campaignId\":\"vod-store-[none]-[none]\",\"agency\":\"none\",\"conversionId\":\"3584\",\"eventUUID\":\"dbe22ec2-22f7-4c0c-975b-0e7e156bd1ee\"}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://vod-sb-stage-provider-lb-1352731790.eu-west-1.elb.amazonaws.com/api/public/notif/2732",
+									"protocol": "http",
+									"host": [
+										"vod-sb-stage-provider-lb-1352731790",
+										"eu-west-1",
+										"elb",
+										"amazonaws",
+										"com"
+									],
+									"path": [
+										"api",
+										"public",
+										"notif",
+										"2732"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "3G/Wi-Fi unsub PR notif",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\"uuid\":\"e4e94c1a-5be2-4d35-80b2-53bb302adf67\",\"MSISDN\":\"PDKSUB-200-bkX5iEtZtNSJsPMXPXVyVzjamvke9lpPe8MmYkEyvQE=\",\"purchaseToken\":\"433a3afd-d4bb-4222-b816-d65633734233\",\"subscriptionId\":436848519,\"subscriptionTypeId\":74960001,\"channel\":\"SHOP\",\"event\":\"CANCEL\",\"reason\":\"CANCEL_IMMEDIATELY\",\"status\":\"CANCELED\",\"subStatus\":\"NONE\",\"startDate\":\"2022-12-12T16:07:13Z\",\"endDate\":\"2022-12-13T08:19:26Z\",\"price\":{\"currency\":\"PLN\"},\"campaignId\":\"vod-store-[none]-[none]\",\"agency\":\"none\",\"conversionId\":\"3554\",\"eventUUID\":\"8bd41fb9-4a7f-461a-bccb-389938b7d1b1\"}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://vod-sb-stage-provider-lb-1352731790.eu-west-1.elb.amazonaws.com/api/public/notif/2732",
+									"protocol": "http",
+									"host": [
+										"vod-sb-stage-provider-lb-1352731790",
+										"eu-west-1",
+										"elb",
+										"amazonaws",
+										"com"
+									],
+									"path": [
+										"api",
+										"public",
+										"notif",
+										"2732"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "MO UNSUB",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\"uuid\":\"e4e94c1a-5be2-4d35-80b2-53bb302adf67\",\"MSISDN\":\"PDKSUB-200-bkX5iEtZtNSJsPMXPXVyVzjamvke9lpPe8MmYkEyvQE=\",\"purchaseToken\":\"c88f7ba1-969c-4570-ac2b-05c19ab1d093\",\"subscriptionId\":437381749,\"subscriptionTypeId\":74960001,\"channel\":\"SMS\",\"event\":\"CANCEL\",\"reason\":\"CANCEL_BY_USER_REQUEST\",\"status\":\"CANCELED\",\"subStatus\":\"NONE\",\"startDate\":\"2022-12-16T15:00:13Z\",\"endDate\":\"2022-12-16T15:32:38Z\",\"price\":{\"currency\":\"PLN\"},\"campaignId\":\"vod-store-[none]-[none]\",\"agency\":\"none\",\"conversionId\":\"3836\",\"eventUUID\":\"b0609325-02bc-445b-aa3d-2872edb21e46\"}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://vod-sb-stage-provider-lb-1352731790.eu-west-1.elb.amazonaws.com/api/public/notif/2732",
+									"protocol": "http",
+									"host": [
+										"vod-sb-stage-provider-lb-1352731790",
+										"eu-west-1",
+										"elb",
+										"amazonaws",
+										"com"
+									],
+									"path": [
+										"api",
+										"public",
+										"notif",
+										"2732"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "RENEW PR",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\"uuid\":\"e4e94c1a-5be2-4d35-80b2-53bb302adf67\",\"MSISDN\":\"PDKSUB-200-AdEUu1eWCqpx5X9wb9f+2q2uJ+CLvFAsYUk91QWbDtM=\",\"purchaseToken\":\"bfa174b7-e956-4393-894b-ed00a915dcaf\",\"subscriptionId\":436848519,\"subscriptionTypeId\":74960001,\"channel\":\"SCHEDULER\",\"event\":\"RENEWAL\",\"reason\":\"BILLING_SUCCESS\",\"status\":\"ACTIVE\",\"subStatus\":\"NONE\",\"startDate\":\"2022-05-21T15:47:37Z\",\"price\":{\"amount\":12.29,\"currency\":\"PLN\"}}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://vod-sb-stage-provider-lb-1352731790.eu-west-1.elb.amazonaws.com/api/public/notif/2732",
+									"protocol": "http",
+									"host": [
+										"vod-sb-stage-provider-lb-1352731790",
+										"eu-west-1",
+										"elb",
+										"amazonaws",
+										"com"
+									],
+									"path": [
+										"api",
+										"public",
+										"notif",
+										"2732"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "RENEW PRE-PROD, PROD",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\"uuid\":\"e4e94c1a-5be2-4d35-80b2-53bb302adf67\",\"MSISDN\":\"PDKSUB-200-AdEUu1eWCqpx5X9wb9f+2q2uJ+CLvFAsYUk91QWbDtM=\",\"purchaseToken\":\"bfa174b7-e956-4393-894b-ed00a915dcaf\",\"subscriptionId\":436848519,\"subscriptionTypeId\":74960001,\"channel\":\"SCHEDULER\",\"event\":\"RENEWAL\",\"reason\":\"BILLING_SUCCESS\",\"status\":\"ACTIVE\",\"subStatus\":\"NONE\",\"startDate\":\"2022-05-21T15:47:37Z\",\"price\":{\"amount\":12.29,\"currency\":\"PLN\"}}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://external-access.100sport.tv/api/public/notif/2732",
+									"protocol": "http",
+									"host": [
+										"external-access",
+										"100sport",
+										"tv"
+									],
+									"path": [
+										"api",
+										"public",
+										"notif",
+										"2732"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Renew with NOT enough balance",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\"uuid\":\"6ca93cb4-fdaf-41ba-be00-eea4ef127783\",\"MSISDN\":\"PDKSUB-200-pTP+81l0zWSQkuRo6+j1aFnehFoQ7SwPy6wILsA+zkY=\",\"purchaseToken\":\"03b75f7e-ed1c-4e2a-b210-5a02707c8a8d\",\"subscriptionId\":436848519,\"subscriptionTypeId\":74960001,\"channel\":\"SCHEDULER\",\"event\":\"RENEWAL\",\"reason\":\"BILLING_SUCCESS\",\"status\":\"INACTIVE\",\"subStatus\":\"NONE\",\"startDate\":\"2022-09-04T14:20:31Z\",\"price\":{\"amount\":12.29,\"currency\":\"PLN\"},\"campaignId\":\"vod-store-[100%Sport]-[none]\",\"agency\":\"none\",\"conversionId\":\"588306181\",\"eventUUID\":\"a1f64546-390d-4035-9f63-3824b9434dd9\"}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://vod-sb-stage-provider-lb-1352731790.eu-west-1.elb.amazonaws.com/api/public/notif/2732",
+									"protocol": "http",
+									"host": [
+										"vod-sb-stage-provider-lb-1352731790",
+										"eu-west-1",
+										"elb",
+										"amazonaws",
+										"com"
+									],
+									"path": [
+										"api",
+										"public",
+										"notif",
+										"2732"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "PS Ooredoo",
+					"item": [
+						{
+							"name": "MO UNSUB",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\"msgId\":234665123855,\"opId\":73,\"serviceId\":\"100sport_service\",\"commandType\":\"UNSUB\",\"msisdn\":\"972568717635\",\"source\":\"SMS\"}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://vod-sb-stage-provider-lb-1352731790.eu-west-1.elb.amazonaws.com/api/public/special/2342/ccare",
+									"protocol": "http",
+									"host": [
+										"vod-sb-stage-provider-lb-1352731790",
+										"eu-west-1",
+										"elb",
+										"amazonaws",
+										"com"
+									],
+									"path": [
+										"api",
+										"public",
+										"special",
+										"2342",
+										"ccare"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "MO not_enough_credit callback",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\"id\":2195,\"client\":\"store\",\"client_id\":null,\"client_user\":\"972567495017\",\"client_fields\":[],\"type\":\"subscribe\",\"subtype\":\"provider\",\"status\":\"failed\",\"error\":\"not_enough_credit\",\"url\":null,\"provider_id\":\"234664955981\",\"provider_user\":null,\"provider_fields\":{\"msgId\":234664955981,\"opId\":73,\"serviceId\":\"100sport_service\",\"commandType\":\"SUB\",\"msisdn\":\"972567495017\",\"source\":\"SMS\",\"action\":\"customerCare\",\"carrier\":\"2342\"},\"charge_full\":null,\"charge_error\":null,\"charge_value\":null,\"charge_paid\":null,\"charge_currency\":null,\"charge_tier\":\"2\",\"carrier\":2342}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://pr-3443-vod.jenkins.dev-integrations.com/billing-sdk/api/callback",
+									"protocol": "http",
+									"host": [
+										"pr-3443-vod",
+										"jenkins",
+										"dev-integrations",
+										"com"
+									],
+									"path": [
+										"billing-sdk",
+										"api",
+										"callback"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "MO SUB",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\"msgId\":234665212073,\"opId\":73,\"serviceId\":\"100sport_service\",\"commandType\":\"SUB\",\"msisdn\":\"972568717635\",\"source\":\"SMS\"}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://vod-sb-stage-provider-lb-1352731790.eu-west-1.elb.amazonaws.com/api/public/special/2342/ccare",
+									"protocol": "http",
+									"host": [
+										"vod-sb-stage-provider-lb-1352731790",
+										"eu-west-1",
+										"elb",
+										"amazonaws",
+										"com"
+									],
+									"path": [
+										"api",
+										"public",
+										"special",
+										"2342",
+										"ccare"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "MO SUB Callback",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "\t{\"id\":602009869,\"client\":\"vod-store\",\"client_id\":null,\"client_user\":\"972568717635\",\"client_fields\":{\"user_ip\":null,\"aff_data\":null,\"bot_filters_warnings\":null,\"paid_amount\":\"1\"},\"type\":\"subscribe\",\"subtype\":\"direct\",\"status\":\"successful\",\"error\":null,\"url\":null,\"provider_id\":null,\"provider_user\":\"972568717635\",\"provider_fields\":{\"source\":\"SMS\"},\"charge_full\":null,\"charge_error\":null,\"charge_value\":null,\"charge_paid\":null,\"charge_currency\":\"ILS\",\"charge_tier\":\"2\",\"carrier\":2342,\"provider\":111}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://pr-3443-vod.jenkins.dev-integrations.com/billing-sdk/api/callback",
+									"protocol": "http",
+									"host": [
+										"pr-3443-vod",
+										"jenkins",
+										"dev-integrations",
+										"com"
+									],
+									"path": [
+										"billing-sdk",
+										"api",
+										"callback"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "MO UNSUB Callback",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\"id\":2228,\"client\":\"store\",\"client_id\":null,\"client_user\":\"972568717635\",\"client_fields\":[],\"type\":\"unsubscribe\",\"subtype\":\"provider\",\"status\":\"successful\",\"error\":null,\"url\":null,\"provider_id\":\"234665452262\",\"provider_user\":null,\"provider_fields\":{\"msgId\":234665452262,\"opId\":73,\"serviceId\":\"100sport_service\",\"commandType\":\"UNSUB\",\"msisdn\":\"972568717635\",\"source\":\"SMS\",\"action\":\"customerCare\",\"carrier\":\"2342\"},\"charge_full\":null,\"charge_error\":null,\"charge_value\":null,\"charge_paid\":null,\"charge_currency\":null,\"charge_tier\":\"2\",\"carrier\":2342}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://pr-3443-vod.jenkins.dev-integrations.com/billing-sdk/api/callback",
+									"protocol": "http",
+									"host": [
+										"pr-3443-vod",
+										"jenkins",
+										"dev-integrations",
+										"com"
+									],
+									"path": [
+										"billing-sdk",
+										"api",
+										"callback"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Jazz PK",
+					"item": [
+						{
+							"name": "MO UNSUB",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\"msgId\":234664687980,\"opId\":21,\"serviceId\":\"100sport_service\",\"commandType\":\"UNSUB\",\"msisdn\":\"923203617298\",\"source\":\"SMS\"}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://vod-sb-stage-provider-lb-1352731790.eu-west-1.elb.amazonaws.com/api/public/special/338/ccare",
+									"protocol": "http",
+									"host": [
+										"vod-sb-stage-provider-lb-1352731790",
+										"eu-west-1",
+										"elb",
+										"amazonaws",
+										"com"
+									],
+									"path": [
+										"api",
+										"public",
+										"special",
+										"338",
+										"ccare"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Zong PK",
+					"item": [
+						{
+							"name": "MO UNSUB",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\"msgId\":234664740826,\"opId\":27,\"serviceId\":\"100sport_service\",\"commandType\":\"UNSUB\",\"msisdn\":\"923192553617\",\"source\":\"SMS\"}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://vod-sb-stage-provider-lb-1352731790.eu-west-1.elb.amazonaws.com/api/public/special/340/ccare",
+									"protocol": "http",
+									"host": [
+										"vod-sb-stage-provider-lb-1352731790",
+										"eu-west-1",
+										"elb",
+										"amazonaws",
+										"com"
+									],
+									"path": [
+										"api",
+										"public",
+										"special",
+										"340",
+										"ccare"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Etisalat UAE",
+					"item": []
+				},
+				{
+					"name": "ID Hutch",
+					"item": [
+						{
+							"name": "MO SUB",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\"msgId\":234751136999,\"opId\":29,\"serviceId\":\"100sport_service\",\"commandType\":\"SUB\",\"msisdn\":\"6289616049548\",\"source\":\"SMS\"}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://vod-sb-stage-provider-lb-1352731790.eu-west-1.elb.amazonaws.com/api/public/special/2255/ccare",
+									"protocol": "http",
+									"host": [
+										"vod-sb-stage-provider-lb-1352731790",
+										"eu-west-1",
+										"elb",
+										"amazonaws",
+										"com"
+									],
+									"path": [
+										"api",
+										"public",
+										"special",
+										"2255",
+										"ccare"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "MO UNSUB",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\"msgId\":234751136999,\"opId\":29,\"serviceId\":\"100sport_service\",\"commandType\":\"UNSUB\",\"msisdn\":\"6289616049548\",\"source\":\"SMS\"}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://vod-sb-stage-provider-lb-1352731790.eu-west-1.elb.amazonaws.com/api/public/special/2255/ccare",
+									"protocol": "http",
+									"host": [
+										"vod-sb-stage-provider-lb-1352731790",
+										"eu-west-1",
+										"elb",
+										"amazonaws",
+										"com"
+									],
+									"path": [
+										"api",
+										"public",
+										"special",
+										"2255",
+										"ccare"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				}
+			]
+		}
+	]
+}
